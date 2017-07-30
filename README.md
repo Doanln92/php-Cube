@@ -29,3 +29,13 @@ III. làm quen với cấu trúc thư mục và file của Cube
      - Themes: (ở một vài framework khác) có thể coi là views, chứ các file dùng để hiển thị ra trình duyệt
 
    * chú ý với cube bạn có thể thay đổi giao diện một cacg1 dễ dàng nên css, js đi chung với một giao diện phải dược đat trong thư mục của giao diện đó. Còn các file css, images, js của trang web nên được đặt trong một thư mục khác
+  - Cách sử dụng controller:
+   + thạo một file có tên trùng với path trên url bạn muốn xử lý
+   ví dụ: localhost/path1 hoặc localhost/path1/path2 hoặc localhost/path1/path2/path3
+   thì sẽ được trỏ vào file path1 trong thư mục cubes/path1.php
+   nhóm path: cubes/[pathgroup]/pathname.php
+
+ví dụ bạn có mục sản phẩm, bên trong lại có các mục như thêm, sửa, xóa
+bạn có thể tạo một thư mục là san-phâm
+bên trong gồm các file add.php, edit.php, delete.php
+
