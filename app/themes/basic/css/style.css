@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #fafafa;
+}
+
+.message,
+.error-message {
+    margin: 100px auto;
+    padding: 10px;
+}
+
+.message-text {
+    background: rgba(255, 255, 255, 0.75);
+    border: 2px dotted green;
+    padding: 10px;
+    color: green;
+    font-size: 22px;
+    text-align: center;
+}
+
+.error-message .message-text {
+    border: 2px dotted red;
+    color: red;
+}
+
+header {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted silver;
+}
+
+header h1 {
+    color: dodgerblue;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 5px;
+    border-top: 1px dotted silver;
+}
