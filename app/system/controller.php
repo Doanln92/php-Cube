@@ -6,7 +6,7 @@
  */
 
 $path_list = get_list_path(true);
-if(!$path_list) $path_list = array('index');
+if(!$path_list) $path_list = array('home');
 if($path_list){
     $p1 = get_path(1,$path_list[0]);
     $sp = false;
