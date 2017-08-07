@@ -5,8 +5,8 @@
  * @copyright 2016
  */
 
-$path_list = get_list_path(true);
-if(!$path_list) $path_list = array('home');
+$path_list = get_list_path();
+if(!$path_list) $path_list = array('index');
 if($path_list){
     $p1 = get_path(1,$path_list[0]);
     $sp = false;
@@ -21,14 +21,14 @@ if($path_list){
                 $sp = true;
             }elseif($pe){
                 get_cube($p);
-                $i += ($t+100);
                 $sp = true;
+                $i += ($t+100);
             }
         }
         elseif($pe){
             get_cube($p);
-            $i+= ($t+100);
             $sp = true;
+            $i+= ($t+100);
         }
     }
     if(!$sp){

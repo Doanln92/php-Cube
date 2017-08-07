@@ -11,6 +11,6 @@ add_pagetitle('Testing page');
 
 cube::set_var('message',$mess);
 
-display('error');
+view::display('error');
 
 ?>

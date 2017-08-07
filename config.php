@@ -76,6 +76,8 @@ function get_config_var(){
          * select theme
          */
           
+        define('VIEWDIR',APPDIR.'views/');
+        define('CACHEDIR',APPDIR.'caches/');
         define('THEMEDIR',APPDIR.'themes/basic/');
         define('THEMEURL',HOMEURL.'/app/themes/basic');
         
@@ -120,6 +122,8 @@ function get_config_var(){
             'css_url' => CSSURL,
             'js_url' => JSURL,
             'content_url' => CONTENTSURL,
+            'view_dir' => VIEWDIR,
+            'cache_dir' => CACHEDIR,
             'theme_dir' => THEMEDIR,
             'theme_url' => THEMEURL
         )

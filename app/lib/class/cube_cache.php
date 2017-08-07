@@ -52,7 +52,7 @@ class cube_cache{
     public static function saveCache($filename=null,$content=null){
         if(!self::$status) return false;
         if(is_string($filename) && $f = self::getFilePath($filename)){
-            return sd_save_file_contents($content,$f,self::$ext);
+            return cube::save_file_contents($content,$f,self::$ext);
         }
         return false;
             
@@ -66,7 +66,7 @@ class cube_cache{
         if(!self::$status) return null;
         if(self::checkFileTime($filename,$time)){
             $f = self::getFilePath($filename);
-            return sd_get_file_contents($f,self::$ext);
+            return cube::get_file_contents($f,self::$ext);
         }
         return null;
     }

@@ -1026,7 +1026,7 @@ class PDOdb{
             if(is_array($val)){
                 $vs = $val;
             }else{
-                $p = '/^\[(.*)\]$/si';
+                $p = '/^\[(.+)\]$/si';
                 if(preg_match($p,$val,$m)){
                     $vs = explode(',',$m[1]);
                 }else{
@@ -1080,7 +1080,7 @@ class PDOdb{
                     }else{
                         $s .= $op . $f. ' '.$o . ' '.$this->quote(substr($val,1));
                     }
-                }else{
+                }elseif($val!==''){
                     $d = $vl;
                     
                     if($o == 'LIKE' || $o == 'NOTLIKE'){

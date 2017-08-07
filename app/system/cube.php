@@ -67,6 +67,7 @@ class cube{
         self::$_vars = new cube_vars();
         self::$_map  = new cube_map($c->e('map'));
         db::config($c->get('db'));
+        view::init($c->e('map'));
     }
     
     
@@ -82,7 +83,7 @@ class cube{
         return self::$_vars->set($name,$var);
     }
     
-    public static function remove($name=null,$d=null){
+    public static function remove_var($name=null,$d=null){
         return self::$_vars->remove($name,$d);
     }
     
@@ -177,7 +178,6 @@ class cube{
         return self::$_files->catch_error();
     }
     // end file
-    
     
 
 }
